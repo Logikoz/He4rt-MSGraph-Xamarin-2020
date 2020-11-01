@@ -1,10 +1,17 @@
-# How to run the completed project
+# He4rt And Microsoft Graph Event
+#### Xamarin.Forms, MVVM, Android, UWP
 
-## Prerequisites
+## Screenshots
+<img src="https://user-images.githubusercontent.com/37851168/97809441-d9a3be80-1c3a-11eb-8d0a-4e518009a75b.png" width="400" height="300"/>
+<img src="https://user-images.githubusercontent.com/37851168/97809470-1374c500-1c3b-11eb-87b8-4b327555fe2a.png" width="400" height="300"/>
+<img src="https://user-images.githubusercontent.com/37851168/97809473-17a0e280-1c3b-11eb-9020-25e71518c256.png" width="400" height="300"/>
+
+## Prerequisites to run this project
 
 To run the completed project in this folder, you need the following:
 
-- [Visual Studio](https://visualstudio.microsoft.com/vs/) installed on your development machine. (**Note:** This tutorial was written with Visual Studio 2019 version 16.7. The steps in this guide may work with other versions, but that has not been tested.)
+- [Visual Studio](https://visualstudio.microsoft.com/vs/) installed on your development machine. (**Note:** This tutorial was written with Visual Studio 2019 version 16.7.6.
+The steps in this guide may work with other versions, but that has not been tested.)
 - Xamarin installed as part of your Visual Studio installation. See [Installing Xamarin](https://docs.microsoft.com/xamarin/cross-platform/get-started/installation) for instructions on installing and configuring Xamarin.
 - Either a personal Microsoft account with a mailbox on Outlook.com, or a Microsoft work or school account.
 
