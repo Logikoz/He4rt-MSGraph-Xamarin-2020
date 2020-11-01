@@ -8,13 +8,13 @@
 
   <Identity
     Name="413915c7-7002-417b-b66b-88e7ef920796"
-    Publisher="CN=48b7f80f-81c1-43c4-bd92-d7a3877c9a8f"
+    Publisher="CN=logikoz"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="ec0cc741-fd3e-485c-81be-68815c480690" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>MSGraph.Mobile.UWP</DisplayName>
+    <DisplayName>He4rt.MSGraph</DisplayName>
     <PublisherDisplayName>48b7f80f-81c1-43c4-bd92-d7a3877c9a8f</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
