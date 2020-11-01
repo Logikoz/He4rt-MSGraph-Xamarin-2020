@@ -8,8 +8,8 @@
 
   <Identity
     Name="413915c7-7002-417b-b66b-88e7ef920796"
-    Publisher="CN=logikoz"
-    Version="1.0.0.0" />
+    Publisher="CN=He4rt"
+    Version="1.0.1.0" />
 
   <mp:PhoneIdentity PhoneProductId="ec0cc741-fd3e-485c-81be-68815c480690" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
@@ -35,7 +35,7 @@
         DisplayName="He4rt MSGraph"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="MSGraph.Mobile.UWP"
+        Description="Sample app for consume MS Graph services."
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\LargeTile.png" Square71x71Logo="Assets\SmallTile.png">
           <uap:ShowNameOnTiles>
