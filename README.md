@@ -4,7 +4,7 @@
 
 To run the completed project in this folder, you need the following:
 
-- [Visual Studio](https://visualstudio.microsoft.com/vs/) installed on your development machine. (**Note:** This tutorial was written with Visual Studio 2019 version 16.5.2 and Visual Studio for Mac version 8.5.1. The steps in this guide may work with other versions, but that has not been tested.)
+- [Visual Studio](https://visualstudio.microsoft.com/vs/) installed on your development machine. (**Note:** This tutorial was written with Visual Studio 2019 version 16.7. The steps in this guide may work with other versions, but that has not been tested.)
 - Xamarin installed as part of your Visual Studio installation. See [Installing Xamarin](https://docs.microsoft.com/xamarin/cross-platform/get-started/installation) for instructions on installing and configuring Xamarin.
 - Either a personal Microsoft account with a mailbox on Outlook.com, or a Microsoft work or school account.
 
@@ -19,18 +19,17 @@ If you don't have a Microsoft account, there are a couple of options to get a fr
 
 1. Select **New registration**. On the **Register an application** page, set the values as follows.
 
-    - Set **Name** to `Xamarin Graph Tutorial`.
+    - Set **Name** to `He4rt.MSGraph`.
     - Set **Supported account types** to **Accounts in any organizational directory and personal Microsoft accounts**.
-    - Under **Redirect URI (optional)**, change the dropdown to **Public client (mobile & desktop)**, and set the value to `msauth://com.companyname.MSGraph`.
+    - Under **Redirect URI (optional)**, change the dropdown to **Public client (mobile & desktop)**, and set the value to `msauth://He4rt.MSGraphh`.
 
 
-1. Choose **Register**. On the **Xamarin Graph Tutorial** page, copy the value of the **Application (client) ID** and save it, you will need it in the next step.
+1. Choose **Register**. On the **He4rt.MSGraph** page, copy the value of the **Application (client) ID** and save it, you will need it in the next step.
 
 
 ## Configure the sample
 
-1. Rename the `./MSGraph/MSGraph/Models/OAuthSettings.cs.example` file to `OAuthSettings.cs`.
-1. Edit the `OAuthSettings.cs` file and make the following changes.
+1. Edit the `Helpers/AuthSettings.cs` file and make the following changes.
     1. Replace `YOUR_APP_ID_HERE` with the **Application Id** you got from the Azure portal.
 
 ## Run the sample
