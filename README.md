@@ -44,9 +44,9 @@ In Visual Studio, press **F5** or choose **Debug > Start Debugging**.
 
 ## Version history
 
-| Version |       Date       |              Comments              |
-| ------- | ---------------- | ---------------------------------- |
-| 1.0     | 11/2020          | Published                          |
+| Version |       Date       |              Comments              |       Download       |
+| ------- | ---------------- | ---------------------------------- | -------------------- |
+| 1.0     | 11/2020          | Published                          |        [apk](https://github.com/Logikoz/He4rt-MSGraph-Xamarin-2020/releases/download/untagged-0a97feb078febe5219a0/He4rt.MSGraph.apk)      |
 
 ## He4rt Developers
 
