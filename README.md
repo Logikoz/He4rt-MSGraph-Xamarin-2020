@@ -48,6 +48,9 @@ In Visual Studio, press **F5** or choose **Debug > Start Debugging**.
 | ------- | ---------------- | ---------------------------------- | -------------------- |
 | 1.0     | 11/2020          | Published                          |   [apk](https://github.com/Logikoz/He4rt-MSGraph-Xamarin-2020/releases/download/v1.0/He4rt.MSGraph.apk) - [appx](https://github.com/Logikoz/He4rt-MSGraph-Xamarin-2020/releases/download/v1.0/He4rt.MSGraph.appxbundle) ([certificate](https://github.com/Logikoz/He4rt-MSGraph-Xamarin-2020/releases/download/v1.0/He4rt.MSGraph.cer))  |
 
+### OBS FOR WINDOWS 
+Install certificate before install the application [READ THIS GIST](https://gist.github.com/Logikoz/82e5b41225c14f0fdac36823a0f0c60e)
+
 ## He4rt Developers
 
 Made by [He4rt Developers](https://twitter.com/He4rtDevs)
