@@ -30,7 +30,6 @@ If you don't have a Microsoft account, there are a couple of options to get a fr
     - Set **Supported account types** to **Accounts in any organizational directory and personal Microsoft accounts**.
     - Under **Redirect URI (optional)**, change the dropdown to **Public client (mobile & desktop)**, and set the value to `msauth://He4rt.MSGraphh`.
 
-
 1. Choose **Register**. On the **He4rt.MSGraph** page, copy the value of the **Application (client) ID** and save it, you will need it in the next step.
 
 
@@ -42,3 +41,13 @@ If you don't have a Microsoft account, there are a couple of options to get a fr
 ## Run the sample
 
 In Visual Studio, press **F5** or choose **Debug > Start Debugging**.
+
+## Version history
+
+| Version |       Date       |              Comments              |
+| ------- | ---------------- | ---------------------------------- |
+| 1.0     | 11/2020          | Published                          |
+
+## He4rt Developers
+
+Made by [He4rt Developers](https://twitter.com/He4rtDevs)
