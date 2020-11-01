@@ -1,5 +1,5 @@
 # He4rt And Microsoft Graph Event
-#### Xamarin.Forms, MVVM, Android, UWP
+#### A simple application to send contact invitations to the best developer community
 
 ## Screenshots
 <img src="https://user-images.githubusercontent.com/37851168/97809441-d9a3be80-1c3a-11eb-8d0a-4e518009a75b.png" width="400" height="300"/>
