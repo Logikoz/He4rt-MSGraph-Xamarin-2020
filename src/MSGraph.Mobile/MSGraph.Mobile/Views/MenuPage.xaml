@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	x:Class="MSGraph.Mobile.Views.MenuPage"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	Title="Menu">
+	<ContentPage.Content>
+		<Grid>
+			<StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+				<StackLayout Padding="20" BackgroundColor="#003BFF">
+					<Image
+						BackgroundColor="Gray"
+						HeightRequest="100"
+						HorizontalOptions="Center"
+						Source="{Binding Path=UserPhoto}"
+						VerticalOptions="Center"
+						WidthRequest="100">
+						<Image.Clip>
+							<EllipseGeometry
+								Center="50,50"
+								RadiusX="50"
+								RadiusY="50" />
+						</Image.Clip>
+					</Image>
+					<Label
+						FontAttributes="Bold"
+						FontSize="Small"
+						HorizontalOptions="Center"
+						Text="{Binding Path=UserName}"
+						TextColor="White" />
+					<Label
+						HorizontalOptions="Center"
+						Text="{Binding Path=UserEmail}"
+						TextColor="White" />
+				</StackLayout>
+				<ListView
+					x:Name="ListViewMenu"
+					HasUnevenRows="True"
+					HorizontalOptions="Start"
+					RefreshControlColor="Red">
+					<ListView.ItemTemplate>
+						<DataTemplate>
+							<ViewCell>
+								<Grid Padding="10" BackgroundColor="White">
+									<Label FontSize="20" Text="{Binding Title}" />
+								</Grid>
+							</ViewCell>
+						</DataTemplate>
+					</ListView.ItemTemplate>
+				</ListView>
+			</StackLayout>
+			<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand">
+				<Button
+					Padding="10"
+					BackgroundColor="Transparent"
+					Command="{Binding LogoutCommand}"
+					FontAttributes="Bold"
+					FontSize="15"
+					Text="Logout"
+					TextColor="Black" />
+			</StackLayout>
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>

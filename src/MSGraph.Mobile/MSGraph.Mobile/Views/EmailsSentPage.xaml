@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	x:Class="MSGraph.Mobile.Views.EmailsSentPage"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	Title="Sented Emails">
+	<StackLayout HorizontalOptions="Center" WidthRequest="400">
+		<ListView
+			Margin="10,10,10,10"
+			HasUnevenRows="true"
+			ItemsSource="{Binding Emails}">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<StackLayout Padding="10" BackgroundColor="White">
+							<Label
+								FontAttributes="Bold"
+								FontSize="16"
+								Text="{Binding Path=Subject, StringFormat='Subject: \{0\}'}" />
+							<Label FontSize="15" Text="{Binding Path=Email, StringFormat='Email: \{0\}'}" />
+							<Label FontSize="15" Text="{Binding Path=DateTime, StringFormat='Sent Date: \{0\}'}" />
+						</StackLayout>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</StackLayout>
+</ContentPage>

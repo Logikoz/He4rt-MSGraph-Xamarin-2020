@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	x:Class="MSGraph.Mobile.Views.ContactsPage"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:converters="clr-namespace:MSGraph.Mobile.Converters.Bindings"
+	Title="Contacts">
+	<ContentPage.Resources>
+		<converters:IsValidEmailBindingConverter x:Key="ValidEmailConverter" />
+		<converters:NumberExistsBindingConverter x:Key="NumberExistsConverter" />
+	</ContentPage.Resources>
+	<StackLayout HorizontalOptions="Center" WidthRequest="400">
+		<ListView
+			Margin="10,10,10,10"
+			HasUnevenRows="true"
+			ItemsSource="{Binding Contacts}">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<StackLayout Padding="10" BackgroundColor="White">
+							<Label
+								FontAttributes="Bold"
+								FontSize="16"
+								Text="{Binding Path=Name, StringFormat='Name: \{0\}'}" />
+							<Label FontSize="15" Text="{Binding Path=Number, Converter={StaticResource NumberExistsConverter}, StringFormat='Number: \{0\}'}" />
+							<StackLayout IsVisible="{Binding Path=Email, Converter={StaticResource ValidEmailConverter}}">
+								<Label FontSize="15" Text="{Binding Path=Email, StringFormat='Email: \{0\}'}" />
+								<Button
+									BackgroundColor="#003BFF"
+									Command="{Binding SentEmailCommand}"
+									CornerRadius="5"
+									Text="Invite for He4rt Developers"
+									TextColor="White">
+									<Button.Padding>
+										<OnPlatform x:TypeArguments="Thickness">
+											<On Platform="Android" Value="0" />
+											<On Platform="UWP" Value="10" />
+										</OnPlatform>
+									</Button.Padding>
+								</Button>
+							</StackLayout>
+						</StackLayout>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</StackLayout>
+</ContentPage>

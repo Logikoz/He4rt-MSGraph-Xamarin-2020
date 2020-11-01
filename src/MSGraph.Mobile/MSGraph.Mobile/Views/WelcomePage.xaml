@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	x:Class="MSGraph.Mobile.Views.WelcomePage"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	Title="Home">
+	<StackLayout
+		Margin="30"
+		HorizontalOptions="Center"
+		VerticalOptions="Center">
+		<Image HorizontalOptions="Center" WidthRequest="200">
+			<Image.Source>
+				<OnPlatform x:TypeArguments="FileImageSource">
+					<On Platform="Android" Value="./Resources/drawable/he4rtdevs_black.png" />
+					<On Platform="UWP" Value="Assets/he4rtdevs_black.png" />
+				</OnPlatform>
+			</Image.Source>
+		</Image>
+		<Label
+			Margin="30"
+			FontAttributes="Bold"
+			FontSize="20"
+			HorizontalTextAlignment="Center"
+			Text="Welcome to He4rtDevs And Microsoft Graph 2020 Event"
+			TextColor="Black" />
+		<Button
+			BackgroundColor="Transparent"
+			Clicked="OpenMenu"
+			FontSize="20"
+			Text="Open Menu" />
+	</StackLayout>
+</ContentPage>

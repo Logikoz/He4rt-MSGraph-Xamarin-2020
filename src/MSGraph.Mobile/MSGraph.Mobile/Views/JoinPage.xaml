@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	x:Class="MSGraph.Mobile.Views.JoinPage"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	BackgroundColor="#003BFF">
+	<StackLayout
+		Margin="30"
+		HorizontalOptions="Center"
+		VerticalOptions="Center">
+		<Image HorizontalOptions="Center" WidthRequest="200">
+			<Image.Source>
+				<OnPlatform x:TypeArguments="FileImageSource">
+					<On Platform="Android" Value="./Resources/drawable/he4rtdevs.png" />
+					<On Platform="UWP" Value="Assets/he4rtdevs.png" />
+				</OnPlatform>
+			</Image.Source>
+		</Image>
+		<Label
+			Margin="30"
+			FontAttributes="Bold"
+			FontSize="20"
+			HorizontalTextAlignment="Center"
+			Text="He4rtDevs And Microsoft Graph 2020 Event"
+			TextColor="White" />
+		<Button
+			Padding="10"
+			BackgroundColor="Transparent"
+			BorderColor="White"
+			BorderWidth="2"
+			Command="{Binding SignInCommand}"
+			CornerRadius="25"
+			FontAttributes="Bold"
+			FontSize="20"
+			Text="Join"
+			TextColor="White" />
+	</StackLayout>
+</ContentPage>
